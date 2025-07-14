@@ -1,1 +1,48 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff0f5;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #d63384;
+  margin-bottom: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 10px;
+}
+
+.ramo {
+  background-color: #ffc0cb;
+  border: 2px solid #d63384;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+  user-select: none;
+}
+
+.ramo:hover {
+  transform: scale(1.03);
+}
+
+.ramo.bloqueado {
+  background-color: #f5c6cb;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.ramo.aprobado {
+  background-color: #ff69b4;
+  color: white;
+  font-weight: bold;
+}
 
